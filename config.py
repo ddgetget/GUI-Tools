@@ -11,7 +11,7 @@
 
 # 自定义HTML头信息
 custom_css = """
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/avatar.png" type="image/x-icon">
 """
 
 html_content = """
