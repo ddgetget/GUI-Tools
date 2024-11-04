@@ -10,12 +10,9 @@
 @WeChat  :   Herbert·Simon
 '''
 
-# here put the import lib
-import tkinter as tk
+import gradio as gr
 
+from config import custom_css
 
-def create_about_page(parent):
-    frame = tk.Frame(parent, borderwidth=2, relief=tk.SUNKEN)
-    label = tk.Label(frame, text="这是个人资料页面")
-    label.pack(padx=10, pady=10)
-    return frame
+io = gr.Interface(lambda x: "Hello, " + x + "!", "textbox", "textbox", title='打招呼', css=custom_css,
+                  description="这是一个示例应用，用于演示如何在Gradio中设置本地Favicon。", )
